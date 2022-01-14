@@ -77,10 +77,10 @@
 }
 
 .next {
-    top: -5px;
+    bottom: -5px;
 }
 .prev {
-    bottom: -5px;
+    top: -5px;
 }
 
 .prev::after {
