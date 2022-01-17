@@ -11,19 +11,19 @@
    <div class="container" id="container_app">
         <div class="items">
             
-            <div v-for="(elemento, indice) in immagini" class="item" :class="{active: contatore == indice ? true : false}">
-                <img :src="elemento.img" alt="">
+            <div v-for="(element, index) in images" class="item" :class="{active: counter == index ? true : false}">
+                <img :src="element.img" alt="">
                 <div class="text"> 
-                    <h3>{{elemento.title}}</h3>
-                    <p>{{elemento.text}}</p>
+                    <h3>{{element.title}}</h3>
+                    <p>{{element.text}}</p>
                 </div>
             </div> 
             
         </div>
         <div class="thumbs">
             
-            <div v-for="(elemento, indice) in immagini" class="thumb" :class="{active: contatore == indice ? true : false}">
-                <img :src="elemento.img" alt="">
+            <div v-for="(element, index) in images" class="thumb" :class="{active: counter == index ? true : false}">
+                <img :src="element.img" alt="">
             </div> 
             
             <div class="prev" @click="prev"></div>

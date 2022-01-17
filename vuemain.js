@@ -1,8 +1,8 @@
 let app = new Vue({
     el: '#container_app',
     data: {
-        contatore: 0,
-        immagini : [
+        counter: 0,
+        images : [
             {
                 img: 'img/01.jpg',
                 title: 'Svezia',
@@ -34,15 +34,15 @@ let app = new Vue({
     methods: {
         //creo funzioni, da richiamare con vue in html al click sulle freccette, che mi permettano di incrementare e decrementare il valore di contatore
         next: function() {
-            this.contatore ++;
-            if(this.contatore == this.immagini.length) {
-              this.contatore = 0;
+            this.counter ++;
+            if(this.counter == this.images.length) {
+              this.counter = 0;
             }
           },
         prev: function() {
-            this.contatore --;
-            if(this.contatore < 0) {
-              this.contatore = this.immagini.length - 1;
+            this.counter --;
+            if(this.counter < 0) {
+              this.counter = this.images.length - 1;
             }
         },
     },
